@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "第一个React App",
+  "name": "创建一个简单的 React App",
   "icons": [
     {
       "src": "favicon.ico",
