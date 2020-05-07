@@ -7,11 +7,13 @@ import Example5 from "./examples/5/example5";
 import Example6 from "./examples/6/example6";
 import Example7 from "./examples/7/example7";
 import Example8 from "./examples/8/example8";
+import Example8My from "./examples/8/example8-my";
 
 
 function App() {
   return (
       <div id="app">
+          <Example8My/>
           <Example8/>
           <Example7/>
           <Example6/>
