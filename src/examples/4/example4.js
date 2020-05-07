@@ -7,10 +7,9 @@ function ActionLink() {
     }
 
     return (
-        <a href="#" onClick={handleClick}>
+        <a href="##" onClick={handleClick}>
             Click me
         </a>
-
     );
 }
 
@@ -56,9 +55,6 @@ class Toggle extends React.Component {
 
 
 function Example4(props) {
-
-
-
     return (
         <div className="examples example-4">
             <h1>Example 4 : 事件处理</h1>
