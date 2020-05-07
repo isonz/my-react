@@ -8,11 +8,17 @@ import Example6 from "./examples/6/example6";
 import Example7 from "./examples/7/example7";
 import Example8 from "./examples/8/example8";
 import Example8My from "./examples/8/example8-my";
+import Example9 from "./examples/9/example9";
+import Example10 from "./examples/10/example10";
+import Example10_2 from "./examples/10/example10-2";
 
 
 function App() {
   return (
       <div id="app">
+          <Example10_2/>
+          <Example10/>
+          <Example9/>
           <Example8My/>
           <Example8/>
           <Example7/>
