@@ -113,6 +113,8 @@ function Example7(props) {
             <h1>Example 7 : 表单</h1>
             <NameForm/>
             <Reservation/>
+
+            <a href="/example8">example8</a><br />
         </div>
     );
 }

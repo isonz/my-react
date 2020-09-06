@@ -1,5 +1,7 @@
 import React from "react";
 import './example10.css';
+import {Link} from "react-router-dom";
+import {renderRoutes} from "react-router-config";
 
 const json_data = [
     {category: "Sporting Goods", price: "$49.99", stocked: true, name: "Football"},
@@ -80,10 +82,17 @@ class Page extends React.Component{
 //===============================================
 
 function Example10(props) {
+    const route = props.route;
+
     return (
         <div className="examples example-10">
             <h1>Example 10 : React 哲学</h1>
             <Page/>
+
+            <a href="/">HOME</a><br />
+
+            <Link to="/example10/2"> example10 - 2</Link><br />
+            { renderRoutes( route.childrens,{user:'hello'} ) }
         </div>
     );
 }

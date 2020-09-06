@@ -63,6 +63,8 @@ function Example9(props) {
             <WelcomeDialog/>
 
             <SplitPane left={<Contacts />} right={ <Chat />} />
+
+            <a href="/example10">example10</a><br />
         </div>
     );
 }

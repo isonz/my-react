@@ -1,4 +1,6 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {renderRoutes} from "react-router-config";
 
 function BoilingVerdict(props) {
     if (props.celsius >= 100) {
@@ -97,10 +99,16 @@ function tryConvert(temperature, convert) {
 //===============================================
 
 function Example8(props) {
+    const route = props.route;
     return (
         <div className="examples example-8">
             <h1>Example 8 : 状态提升</h1>
             <Calculator/>
+
+            <a href="/example9">example9</a><br />
+
+            <Link to="/example8/my"> example8 my</Link><br />
+            { renderRoutes( route.childrens,{user:'hello'} ) }
         </div>
     );
 }

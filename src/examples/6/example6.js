@@ -84,6 +84,8 @@ function Example6(props) {
             <NumberList2 numbers={nums} />
             <Blog posts={posts} />
             <NumberList3 numbers={nums} />
+
+            <p>route.childrens: extraProps = {props.user}</p>
         </div>
     );
 }

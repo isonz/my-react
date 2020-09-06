@@ -1,4 +1,7 @@
 import React from "react";
+import {Link} from "react-router-dom";
+import {renderRoutes} from "react-router-config";
+
 
 function ActionLink() {
     function handleClick(e) {
@@ -55,11 +58,21 @@ class Toggle extends React.Component {
 
 
 function Example4(props) {
+    const route = props.route;
     return (
         <div className="examples example-4">
             <h1>Example 4 : 事件处理</h1>
             <div><Toggle /></div>
             <div><ActionLink/></div>
+
+            <Link to="/discover/earth">discover earth</Link><br />
+            <Link to="/discover/star"> discover star</Link><br />
+
+            <a href="/example7">example7</a><br />
+
+            { renderRoutes( route.childrens,{user:'hello'} ) }
+
+
         </div>
     );
 }

@@ -135,6 +135,8 @@ function Example5(props) {
             <LoginControl/>
             <Mailbox unreadMessages={messages}/>
             <Page/>
+
+            <p>route.childrens: extraProps = {props.user}</p>
         </div>
     );
 }
